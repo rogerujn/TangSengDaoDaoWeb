@@ -22,7 +22,7 @@ jobs:
           node-version: 18
 
       - name: Install and Build
-        run: yarn install --network-timeout=30000 && yarn build
+        run: yarn install --network-timeout=1000000 && yarn build
 
       - name: build windows app
         if: matrix.os == 'windows-latest'
